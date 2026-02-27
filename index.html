@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="Light">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -12,17 +12,32 @@
   <div class="cursor-follower" id="cursorFollower"></div>
 
   <!-- NAV -->
-  <nav id="nav">
-    <a class="nav-logo" href="index.html">HR</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="certificates.html">Certificates</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <nav id="nav" role="navigation" aria-label="Main navigation">
+  <a class="nav-logo" href="index.html" aria-label="Home">HR</a>
+  <ul class="nav-links" role="list">
+    <li><a href="index.html#about" class="active">Home</a></li>
+    <li><a href="index.html#skills">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="certificates.html">Certificates</a></li>
+    <li><a href="index.html#resume">Resume</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <span class="toggle-mode-label" id="toggleModeLabel">Lite</span>
+    <button
+      class="theme-toggle"
+      id="themeToggle"
+      aria-label="Switch to dark mode"
+      aria-pressed="false"
+      role="switch"
+      title="Toggle dark / light mode"
+    >
+      <div class="theme-toggle-thumb" id="toggleThumb">
+        <span id="toggleIcon" aria-hidden="true">☀️</span>
+      </div>
+    </button>
+  </div>
+</nav>
 
   <!-- HERO -->
   <section id="hero">
@@ -43,16 +58,21 @@
     </div>
   </section>
 
-  <div class="ticker-wrap" aria-hidden="true">
-  <div class="ticker">
-    <span>HARSH RAJPUT</span><span>·</span>
+  <!-- ADD after hero </section> -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="hi">HARSH RAJPUT</span><span>·</span>
     <span>CSE STUDENT</span><span>·</span>
-    <span>DEVELOPER</span><span>·</span>
+    <span class="hi">DEVELOPER</span><span>·</span>
     <span>PROBLEM SOLVER</span><span>·</span>
-    <span>OPEN TO WORK</span><span>·</span>
-    <span>HARSH RAJPUT</span><span>·</span>
+    <span class="hi">OPEN TO WORK</span><span>·</span>
+    <span>CLEAN CODE</span><span>·</span>
+    <span class="hi">HARSH RAJPUT</span><span>·</span>
     <span>CSE STUDENT</span><span>·</span>
-    <span>DEVELOPER</span><span>·</span>
+    <span class="hi">DEVELOPER</span><span>·</span>
+    <span>PROBLEM SOLVER</span><span>·</span>
+    <span class="hi">OPEN TO WORK</span><span>·</span>
+    <span>CLEAN CODE</span><span>·</span>
   </div>
 </div>
 

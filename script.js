@@ -5,6 +5,46 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  /* ── 11.  THEME TOGGLE ── */
+const html        = document.documentElement;
+const toggleBtn   = document.getElementById('themeToggle');
+const toggleIcon  = document.getElementById('toggleIcon');
+const modeLabel   = document.getElementById('toggleModeLabel');
+
+function applyTheme(theme) {
+  html.setAttribute('data-theme', theme);
+  localStorage.setItem('hr-theme', theme);
+  const isDark = theme === 'dark';
+  if (toggleIcon)  toggleIcon.textContent  = isDark ? '🌙' : '☀️';
+  if (modeLabel)   modeLabel.textContent   = isDark ? 'Dark' : 'Lite';
+  if (toggleBtn) {
+    toggleBtn.setAttribute('aria-label',  isDark ? 'Switch to light mode' : 'Switch to dark mode');
+    toggleBtn.setAttribute('aria-pressed', String(isDark));
+  }
+}
+
+// Default = LIGHT (lite mode) on first visit
+const savedTheme = localStorage.getItem('hr-theme') || 'light';
+applyTheme(savedTheme);
+
+if (toggleBtn) {
+  toggleBtn.addEventListener('click', () => {
+    const current = html.getAttribute('data-theme') || 'light';
+    applyTheme(current === 'dark' ? 'light' : 'dark');
+  });
+  toggleBtn.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggleBtn.click();
+    }
+  });
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+  if (!localStorage.getItem('hr-theme')) applyTheme(e.matches ? 'dark' : 'light');
+});
+
+
   /* ─── 1. CUSTOM CURSOR ─── */
   const cursor   = document.getElementById('cursor');
   const follower = document.getElementById('cursorFollower');
@@ -191,3 +231,4 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('%c🔗 github.com/Harsh-Rajput2006', 'color:#555;font-size:13px;');
 
 });
+
