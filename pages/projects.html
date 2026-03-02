@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Harsh Rajput</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/projects.css">
+</head>
+<body data-page="projects">
+  <header class="site-header" id="siteHeader">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="logo" href="../index.html">HR</a>
+      <ul class="nav-links">
+        <li><a href="../index.html" data-nav="home">Home</a></li>
+        <li><a href="skills.html" data-nav="skills">Skills</a></li>
+        <li><a href="projects.html" data-nav="projects">Projects</a></li>
+        <li><a href="certificates.html" data-nav="certificates">Certificates</a></li>
+        <li><a href="resume.html" data-nav="resume">Resume</a></li>
+        <li><a href="contact.html" data-nav="contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <span class="theme-label" id="themeLabel">Light</span>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+          <span id="themeIcon">Sun</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero reveal">
+      <p>Work and Practice</p>
+      <h1>Projects</h1>
+    </section>
+
+    <section class="projects-grid reveal" aria-label="Projects grid">
+      <article class="card project-card" data-project="true">
+        <h3>Amazon Frontend Clone</h3>
+        <div class="meta-row">
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3</span>
+          <span class="chip">Responsive</span>
+        </div>
+        <p>
+          A frontend-only recreation of Amazon's home page to strengthen layout, spacing, and responsive design practices.
+        </p>
+        <div class="project-foot">
+          <span class="status">Completed</span>
+          <a class="btn btn-outline" href="https://github.com/Harsh-Rajput2006" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </article>
+
+      <article class="card project-card" data-project="true">
+        <h3>Portfolio Refactor</h3>
+        <div class="meta-row">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+        </div>
+        <p>
+          Split a monolithic page into dedicated pages with separate CSS and JS files for better maintainability.
+        </p>
+        <div class="project-foot">
+          <span class="status">Completed</span>
+          <a class="btn btn-outline" href="../index.html">Open Site</a>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <h3>Next Project Slot</h3>
+        <div class="meta-row">
+          <span class="chip">In Progress</span>
+        </div>
+        <p>Add your next project here with stack, description, and repository link.</p>
+      </article>
+    </section>
+
+    <section class="card summary-card reveal">
+      <p>Total listed projects: <strong id="projectCount">0</strong></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Harsh Rajput</p>
+    <p>Projects page</p>
+  </footer>
+
+  <script src="../js/common.js"></script>
+  <script src="../js/projects.js"></script>
+</body>
+</html>

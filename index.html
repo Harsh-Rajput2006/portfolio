@@ -1,264 +1,110 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="Light">
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Harsh Rajput — Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harsh Rajput | Portfolio</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
-<body>
-
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-follower" id="cursorFollower"></div>
-
-  <!-- NAV -->
-  <nav id="nav" role="navigation" aria-label="Main navigation">
-  <a class="nav-logo" href="index.html" aria-label="Home">HR</a>
-  <ul class="nav-links" role="list">
-    <li><a href="index.html#about" class="active">Home</a></li>
-    <li><a href="index.html#skills">Skills</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="certificates.html">Certificates</a></li>
-    <li><a href="index.html#resume">Resume</a></li>
-    <li><a href="index.html#contact">Contact</a></li>
-  </ul>
-  <div class="nav-right">
-    <span class="toggle-mode-label" id="toggleModeLabel">Lite</span>
-    <button
-      class="theme-toggle"
-      id="themeToggle"
-      aria-label="Switch to dark mode"
-      aria-pressed="false"
-      role="switch"
-      title="Toggle dark / light mode"
-    >
-      <div class="theme-toggle-thumb" id="toggleThumb">
-        <span id="toggleIcon" aria-hidden="true">☀️</span>
+<body data-page="home">
+  <header class="site-header" id="siteHeader">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="logo" href="index.html">HR</a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="pages/skills.html" data-nav="skills">Skills</a></li>
+        <li><a href="pages/projects.html" data-nav="projects">Projects</a></li>
+        <li><a href="pages/certificates.html" data-nav="certificates">Certificates</a></li>
+        <li><a href="pages/resume.html" data-nav="resume">Resume</a></li>
+        <li><a href="pages/contact.html" data-nav="contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <span class="theme-label" id="themeLabel">Light</span>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+          <span id="themeIcon">Sun</span>
+        </button>
       </div>
-    </button>
-  </div>
-</nav>
+    </nav>
+  </header>
 
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-bg-text">HARSH</div>
-    <div class="hero-tag">// CSE Student · Developer in the making</div>
-    <h1 class="hero-name">
-      <span class="glitch">HARSH</span><br>
-      <span class="accent">RAJPUT</span>
-    </h1>
-    <p class="hero-sub">Aspiring developer focused on clean code, efficiency, and impactful solutions. Building the future one commit at a time.</p>
-    <div class="hero-actions">
-      <a href="projects.html" class="btn btn-primary">View Work ↓</a>
-      <a href="#contact" class="btn btn-outline">Get In Touch</a>
-    </div>
-    <div class="hero-scroll">
-      <div class="scroll-line"></div>
-      <span>Scroll</span>
-    </div>
-  </section>
-
-  <!-- ADD after hero </section> -->
-<div class="ticker-wrap" aria-hidden="true">
-  <div class="ticker-track">
-    <span class="hi">HARSH RAJPUT</span><span>·</span>
-    <span>CSE STUDENT</span><span>·</span>
-    <span class="hi">DEVELOPER</span><span>·</span>
-    <span>PROBLEM SOLVER</span><span>·</span>
-    <span class="hi">OPEN TO WORK</span><span>·</span>
-    <span>CLEAN CODE</span><span>·</span>
-    <span class="hi">HARSH RAJPUT</span><span>·</span>
-    <span>CSE STUDENT</span><span>·</span>
-    <span class="hi">DEVELOPER</span><span>·</span>
-    <span>PROBLEM SOLVER</span><span>·</span>
-    <span class="hi">OPEN TO WORK</span><span>·</span>
-    <span>CLEAN CODE</span><span>·</span>
-  </div>
-</div>
-
-  <!-- STATS BAR -->
-  <div class="stats-bar">
-    <div class="stat-item">
-      <div class="stat-number">6+</div>
-      <div class="stat-label">Languages & Tools</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number">1+</div>
-      <div class="stat-label">Projects Built</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number">∞</div>
-      <div class="stat-label">Curiosity Level</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number">100%</div>
-      <div class="stat-label">Dedication</div>
-    </div>
-  </div>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="section-header">
-      <span class="section-number">00</span>
-      <h2 class="section-title">About Me</h2>
-      <div class="section-line"></div>
-    </div>
-    <p style="color:var(--muted);line-height:1.9;font-size:1rem;max-width:700px;margin-bottom:1.2rem;">
-      Hey! I'm <span style="color:var(--accent);font-weight:500;">Harsh Rajput</span>, a Computer Science & Engineering student with a passion for building things that matter. I believe in writing clean, efficient code and constantly pushing my limits.
-    </p>
-    <p style="color:var(--muted);line-height:1.9;font-size:1rem;max-width:700px;">
-      Currently focused on mastering <span style="color:var(--accent);font-weight:500;">Data Structures & Algorithms</span>, expanding my web development skills, and working on projects that solve real problems.
-    </p>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="bg-surface">
-    <div class="section-header">
-      <span class="section-number">01</span>
-      <h2 class="section-title">Skills</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-card"><div class="skill-icon">🐍</div><div class="skill-name">Python</div><div class="skill-level">Intermediate</div></div>
-      <div class="skill-card"><div class="skill-icon">☕</div><div class="skill-name">Java</div><div class="skill-level">Intermediate</div></div>
-      <div class="skill-card"><div class="skill-icon">⚡</div><div class="skill-name">C++</div><div class="skill-level">Intermediate</div></div>
-      <div class="skill-card"><div class="skill-icon">🔗</div><div class="skill-name">DSA</div><div class="skill-level">Learning</div></div>
-      <div class="skill-card"><div class="skill-icon">🗄️</div><div class="skill-name">MySQL</div><div class="skill-level">Beginner</div></div>
-      <div class="skill-card"><div class="skill-icon">🌐</div><div class="skill-name">HTML</div><div class="skill-level">Intermediate</div></div>
-      <div class="skill-card"><div class="skill-icon">🎨</div><div class="skill-name">CSS</div><div class="skill-level">Intermediate</div></div>
-      <div class="skill-card"><div class="skill-icon">🚀</div><div class="skill-name">Git</div><div class="skill-level">Learning</div></div>
-    </div>
-  </section>
-
-  <!-- PROJECTS PREVIEW -->
-  <section id="projects">
-    <div class="section-header">
-      <span class="section-number">02</span>
-      <h2 class="section-title">Projects</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="projects-grid">
-      <div class="project-card">
-        <div class="project-tag">// Practice Project</div>
-        <div class="project-title">Amazon Clone</div>
-        <p class="project-desc">A pixel-perfect front-end clone of Amazon's homepage, built entirely with HTML and CSS. Demonstrates layout skills, responsive design principles, and attention to UI detail.</p>
-        <div class="project-tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">Responsive</span>
-        </div>
-        <a href="https://github.com/Harsh-Rajput2006" target="_blank" class="project-link">View on GitHub →</a>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Computer Science Student</p>
+      <h1>Hi, I am Harsh Rajput.</h1>
+      <p class="hero-copy">
+        I am building practical projects, improving my DSA foundation, and learning to ship reliable web experiences.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="pages/projects.html">View Projects</a>
+        <a class="btn btn-outline" href="pages/contact.html">Contact Me</a>
       </div>
-      <div class="project-card project-card--empty">
-        <div class="empty-icon">+</div>
-        <div class="empty-label">More Coming Soon</div>
-        <div class="empty-sub">Currently learning & building</div>
-      </div>
-    </div>
-    <br>
-    <a href="projects.html" class="btn btn-outline" style="margin-top:1.5rem;">View All Projects →</a>
-  </section>
+    </section>
 
-  <!-- CERTIFICATES PREVIEW -->
-  <section id="certificates" class="bg-surface">
-    <div class="section-header">
-      <span class="section-number">03</span>
-      <h2 class="section-title">Certificates</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="certs-grid">
-      <div class="cert-card">
-        <div class="cert-icon">🏆</div>
-        <div class="cert-title">Python Programming Fundamentals</div>
-        <div class="cert-issuer">Add Issuer Here</div>
-        <div class="cert-year">2024</div>
+    <section class="section reveal">
+      <div class="section-head">
+        <h2>About</h2>
       </div>
-      <div class="cert-card">
-        <div class="cert-icon">🎖️</div>
-        <div class="cert-title">Web Development Basics</div>
-        <div class="cert-issuer">Add Issuer Here</div>
-        <div class="cert-year">2024</div>
-      </div>
-      <div class="cert-card cert-card--placeholder">
-        <div class="cert-icon">✨</div>
-        <div class="cert-title">More certificates loading...</div>
-        <div class="cert-issuer">Update with your real certificates</div>
-        <div class="cert-year">—</div>
-      </div>
-    </div>
-    <br>
-    <a href="certificates.html" class="btn btn-outline" style="margin-top:1.5rem;">View All Certificates →</a>
-  </section>
+      <p class="section-copy">
+        I focus on clean code, readable structure, and continuous learning. My current priorities are Data Structures and Algorithms, Java, Python, and frontend development.
+      </p>
+    </section>
 
-  <!-- RESUME -->
-  <section id="resume" class="resume-section">
-    <div class="resume-bg-text">RESUME</div>
-    <div class="resume-inner">
-      <div class="resume-title">DOWNLOAD<br><span>RESUME</span></div>
-      <p class="resume-sub">Get a full overview of my education, skills, projects, and goals. Updated regularly as I keep growing.</p>
-      <div class="resume-btns">
-        <a href="your-cv.pdf" class="btn btn-primary" download>↓ Download CV (.pdf)</a>
-        <a href="https://www.linkedin.com/in/harsh-rajput-bb457b357/" target="_blank" class="btn btn-outline">View LinkedIn ↗</a>
+    <section class="section reveal">
+      <div class="section-head">
+        <h2>Quick Stats</h2>
       </div>
-    </div>
-  </section>
+      <div class="stats-grid">
+        <article class="stat-card">
+          <p class="stat-number" data-count="8">0</p>
+          <p class="stat-label">Skills and Tools</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-number" data-count="6">0</p>
+          <p class="stat-label">Total Pages</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-number" data-count="2">0</p>
+          <p class="stat-label">Certificates Added</p>
+        </article>
+      </div>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="section-header">
-      <span class="section-number">04</span>
-      <h2 class="section-title">Contact</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="contact-grid">
-      <div>
-        <h2 class="contact-heading">LET'S <span>CONNECT</span></h2>
-        <p class="contact-sub">Have a project idea, collaboration opportunity, or just want to say hi? I'm always open to connecting with like-minded people.</p>
-        <div class="contact-links">
-          <a href="mailto:harshrajput5291@gmail.com" class="contact-link">
-            <div class="cl-icon">📧</div>
-            <div class="cl-info"><div class="cl-label">Email</div><div class="cl-val">harshrajput5291@gmail.com</div></div>
-            <div class="cl-arrow">→</div>
-          </a>
-          <a href="https://github.com/Harsh-Rajput2006" target="_blank" class="contact-link">
-            <div class="cl-icon">💻</div>
-            <div class="cl-info"><div class="cl-label">GitHub</div><div class="cl-val">github.com/Harsh-Rajput2006</div></div>
-            <div class="cl-arrow">→</div>
-          </a>
-          <a href="https://www.linkedin.com/in/harsh-rajput-bb457b357/" target="_blank" class="contact-link">
-            <div class="cl-icon">🔗</div>
-            <div class="cl-info"><div class="cl-label">LinkedIn</div><div class="cl-val">in/harsh-rajput-bb457b357</div></div>
-            <div class="cl-arrow">→</div>
-          </a>
-        </div>
+    <section class="section reveal">
+      <div class="section-head">
+        <h2>Explore Pages</h2>
       </div>
-      <div>
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <label class="form-label">Your Name</label>
-            <input class="form-input" type="text" placeholder="John Doe" required/>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Your Email</label>
-            <input class="form-input" type="email" placeholder="john@example.com" required/>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Message</label>
-            <textarea class="form-textarea" placeholder="Hey Harsh, let's connect..."></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full">Send Message →</button>
-        </form>
+      <div class="link-grid">
+        <a class="page-link-card" href="pages/skills.html">
+          <h3>Skills</h3>
+          <p>Detailed technical skills and proficiency levels.</p>
+        </a>
+        <a class="page-link-card" href="pages/projects.html">
+          <h3>Projects</h3>
+          <p>Project summaries, stack details, and status.</p>
+        </a>
+        <a class="page-link-card" href="pages/certificates.html">
+          <h3>Certificates</h3>
+          <p>Course and certification details in one place.</p>
+        </a>
+        <a class="page-link-card" href="pages/resume.html">
+          <h3>Resume</h3>
+          <p>Quick profile, strengths, and download link.</p>
+        </a>
+        <a class="page-link-card" href="pages/contact.html">
+          <h3>Contact</h3>
+          <p>Email, social links, and contact form.</p>
+        </a>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- FOOTER -->
-  <footer>
-    <span>© 2026 <b>Harsh Rajput</b> — All rights reserved</span>
-    <span>Built with <b>HTML · CSS · JS</b> · Designed with 🔥</span>
-    <span>CSE Student · <b>Developer</b></span>
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Harsh Rajput</p>
+    <p>Built with HTML, CSS, and JavaScript</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
 </body>
 </html>

@@ -1,0 +1,58 @@
+.resume-layout {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 14px;
+}
+
+.resume-card {
+  padding: 20px;
+}
+
+.resume-card h2,
+.resume-card h3 {
+  margin: 0;
+}
+
+.resume-card p {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+
+.timeline {
+  margin-top: 14px;
+  border-left: 2px solid var(--line);
+  padding-left: 12px;
+}
+
+.timeline-item {
+  margin-bottom: 14px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.timeline-item p {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.download-row {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 760px) {
+  .resume-layout {
+    grid-template-columns: 1fr;
+  }
+}

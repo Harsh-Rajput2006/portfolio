@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Harsh Rajput</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body data-page="contact">
+  <header class="site-header" id="siteHeader">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="logo" href="../index.html">HR</a>
+      <ul class="nav-links">
+        <li><a href="../index.html" data-nav="home">Home</a></li>
+        <li><a href="skills.html" data-nav="skills">Skills</a></li>
+        <li><a href="projects.html" data-nav="projects">Projects</a></li>
+        <li><a href="certificates.html" data-nav="certificates">Certificates</a></li>
+        <li><a href="resume.html" data-nav="resume">Resume</a></li>
+        <li><a href="contact.html" data-nav="contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <span class="theme-label" id="themeLabel">Light</span>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+          <span id="themeIcon">Sun</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero reveal">
+      <p>Let us connect</p>
+      <h1>Contact</h1>
+    </section>
+
+    <section class="contact-layout reveal">
+      <article class="card contact-card">
+        <h2>Reach Me</h2>
+        <p>If you want to collaborate, discuss opportunities, or connect, use any option below.</p>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:harshrajput5291@gmail.com">harshrajput5291@gmail.com</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/Harsh-Rajput2006" target="_blank" rel="noreferrer">github.com/Harsh-Rajput2006</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harsh-rajput-bb457b357/" target="_blank" rel="noreferrer">linkedin.com/in/harsh-rajput-bb457b357</a></li>
+        </ul>
+      </article>
+
+      <article class="card contact-card">
+        <h2>Send a Message</h2>
+        <form class="contact-form" id="contactForm">
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Submit</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Harsh Rajput</p>
+    <p>Contact page</p>
+  </footer>
+
+  <script src="../js/common.js"></script>
+  <script src="../js/contact.js"></script>
+</body>
+</html>
