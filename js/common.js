@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (themeIcon) themeIcon.textContent = isDark ? "Moon" : "Sun";
     if (themeLabel) themeLabel.textContent = isDark ? "Dark" : "Light";
     if (themeToggle) themeToggle.setAttribute("aria-pressed", String(isDark));
+    if (window.bgCanvas) window.bgCanvas.setTheme(isDark ? "dark" : "light");
   }
 
   applyTheme(localStorage.getItem("hr-theme") || "light");

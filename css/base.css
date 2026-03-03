@@ -12,15 +12,15 @@
 }
 
 [data-theme="dark"] {
-  --bg: #0b1220;
-  --surface: #111a2a;
-  --surface-soft: #192338;
+  --bg: #020008;
+  --surface: #08050f;
+  --surface-soft: #0e0a1a;
   --text: #e5ebf5;
-  --muted: #9babc3;
-  --line: #2a3752;
-  --brand: #6ea8fe;
-  --brand-strong: #8bb8ff;
-  --shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+  --muted: #7a8aaa;
+  --line: #1a1530;
+  --brand: #a78bfa;
+  --brand-strong: #c4b5fd;
+  --shadow: 0 14px 30px rgba(0, 0, 0, 0.6);
 }
 
 * {
@@ -259,4 +259,40 @@ main {
   .site-footer {
     flex-direction: column;
   }
+}
+
+/* ── BACKGROUND CANVAS ── */
+#bg-canvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Keep all content above canvas */
+.site-header, main, .site-footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Dark mode card hover glow */
+[data-theme="dark"] .card:hover {
+  border-color: rgba(167, 139, 250, 0.35);
+  box-shadow: 0 0 30px rgba(100, 60, 200, 0.15);
+}
+
+/* Dark mode hero glow */
+[data-theme="dark"] .hero {
+  border-color: rgba(167, 139, 250, 0.2);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.5),
+              0 0 80px rgba(80,40,160,0.08);
+}
+
+/* Dark mode hero title gradient */
+[data-theme="dark"] .hero h1 {
+  background: linear-gradient(135deg, #e5ebf5 40%, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
